@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url:  jdbc:postgresql://localhost:5432/amonatapp?useSSL=false
+    username: nassim
+    password: 1234
+
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8082
+  servlet:
+    multipart:
+
+      spring:
+        resources:
+          static-locations: file:/C:/Users/Husniddinkhuja/Desktop/1/amonatapp/storage/
+
+      max-file-size: 100MB
+      max-request-size: 1024MB
+
